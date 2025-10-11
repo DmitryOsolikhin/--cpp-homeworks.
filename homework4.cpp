@@ -4,21 +4,22 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "RU");
 	float number;
-	cout << "Введите число c плавающей точкой: ";
+	cout << "Г‚ГўГҐГ¤ГЁГІГҐ Г·ГЁГ±Г«Г® c ГЇГ«Г ГўГ ГѕГ№ГҐГ© ГІГ®Г·ГЄГ®Г©: ";
 	cin >> number;
-	double resultdouble = static_cast<double>(number);
-	cout << "Как double: " << resultdouble << endl;
-	cout << typeid(resultdouble).name() << endl;
+	double resultDouble = static_cast<double>(number);
+	cout << "ГЉГ ГЄ double: " << resultDouble << endl;
+	cout << typeid(resultDouble).name() << endl;
 	int resultInt = static_cast<int>(number);
-	cout << "Как int: " << resultInt << endl;
+	cout << "ГЉГ ГЄ int: " << resultInt << endl;
 	cout << typeid(resultInt).name() << endl; 
 	bool resultBool = static_cast<bool>(number);
-	//Выполнил операцию if-else потому, что при обычном выводе вместо True/False выдаёт 1/0
+	//Г‚Г»ГЇГ®Г«Г­ГЁГ« Г®ГЇГҐГ°Г Г¶ГЁГѕ if-else ГЇГ®ГІГ®Г¬Гі, Г·ГІГ® ГЇГ°ГЁ Г®ГЎГ»Г·Г­Г®Г¬ ГўГ»ГўГ®Г¤ГҐ ГўГ¬ГҐГ±ГІГ® True/False ГўГ»Г¤Г ВёГІ 1/0
 	if (resultBool == 1) {
-		cout << "Число не равно 0? true" << endl;
+		cout << "Г—ГЁГ±Г«Г® Г­ГҐ Г°Г ГўГ­Г® 0? true" << endl;
 	} else {
-		cout << "Число не равно 0? false" << endl;
+		cout << "Г—ГЁГ±Г«Г® Г­ГҐ Г°Г ГўГ­Г® 0? false" << endl;
 	}
 	cout << typeid(resultBool).name() << endl;
 	return 0;
+
 }
