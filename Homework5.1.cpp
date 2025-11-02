@@ -3,12 +3,13 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "RU");
 	int numberOne,numberTwo;
-	cout << "Ââåäèòå ïåðâîå ÷èñëî: ";
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¯Ã¥Ã°Ã¢Ã®Ã¥ Ã·Ã¨Ã±Ã«Ã®: ";
 	cin >> numberOne;
-	cout << "Ââåäèòå âòîðîå ÷èñëî: ";
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¢Ã²Ã®Ã°Ã®Ã¥ Ã·Ã¨Ã±Ã«Ã®: ";
 	cin >> numberTwo;
 	numberOne = numberOne ^ numberTwo;
 	numberTwo = numberOne ^ numberTwo;
 	numberOne = numberOne ^ numberTwo;
-	cout << "Ïîñëå îáìåíà: " << "\n" << "Ïåðâîå ÷èñëî: " << numberOne << "\n" << "Âòîðîå ÷èñëî: " << numberTwo;
+	cout << "ÃÃ®Ã±Ã«Ã¥ Ã®Ã¡Ã¬Ã¥Ã­Ã : " << "\n" << "ÃÃ¥Ã°Ã¢Ã®Ã¥ Ã·Ã¨Ã±Ã«Ã®: " << numberOne << "\n" << "Ã‚Ã²Ã®Ã°Ã®Ã¥ Ã·Ã¨Ã±Ã«Ã®: " << numberTwo;
+	return 0;
 }
