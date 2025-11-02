@@ -3,10 +3,11 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "RU");
 	int number;
-	cout << "Ââåäèòå ÷èñëî N: ";
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã® N: ";
 	cin >> number;
-	cout << "×èñëà îò 1 äî " << number << ":" << endl;
+	cout << "Ã—Ã¨Ã±Ã«Ã  Ã®Ã² 1 Ã¤Ã® " << number << ":" << endl;
 	for (int i = 1; i <= number; i++) {
 		cout << i << " ";
 	}
+    return 0;
 }
